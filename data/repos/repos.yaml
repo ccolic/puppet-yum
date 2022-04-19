@@ -5,7 +5,6 @@ yum::repos:
   epel:
     descr: "Extra Packages for Enterprise Linux %{facts.os.release.major} - $basearch"
     mirrorlist: "https://mirrors.fedoraproject.org/metalink?repo=epel-%{facts.os.release.major}&arch=$basearch"
-    failovermethod: 'priority'
     enabled: true
     gpgcheck: true
     gpgkey: "file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-%{facts.os.release.major}"
@@ -14,7 +13,6 @@ yum::repos:
   epel-debuginfo:
     descr: "Extra Packages for Enterprise Linux %{facts.os.release.major} - $basearch - Debug"
     mirrorlist: "https://mirrors.fedoraproject.org/metalink?repo=epel-debug-%{facts.os.release.major}&arch=$basearch"
-    failovermethod: 'priority'
     enabled: false
     gpgkey: "file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-%{facts.os.release.major}"
     gpgcheck: true
@@ -23,7 +21,6 @@ yum::repos:
   epel-source:
     descr: "Extra Packages for Enterprise Linux %{facts.os.release.major} - $basearch - Source"
     mirrorlist: "https://mirrors.fedoraproject.org/metalink?repo=epel-source-%{facts.os.release.major}&arch=$basearch"
-    failovermethod: 'priority'
     enabled: false
     gpgkey: "file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-%{facts.os.release.major}"
     gpgcheck: true
@@ -32,7 +29,6 @@ yum::repos:
   epel-testing:
     descr: "Extra Packages for Enterprise Linux %{facts.os.release.major} - Testing - $basearch"
     mirrorlist: "https://mirrors.fedoraproject.org/metalink?repo=testing-epel%{facts.os.release.major}&arch=$basearch"
-    failovermethod: 'priority'
     enabled: false
     gpgcheck: true
     gpgkey: "file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-%{facts.os.release.major}"
@@ -40,7 +36,6 @@ yum::repos:
   epel-testing-debuginfo:
     descr: "Extra Packages for Enterprise Linux %{facts.os.release.major} - Testing - $basearch - Debug"
     mirrorlist: "https://mirrors.fedoraproject.org/metalink?repo=testing-debug-epel%{facts.os.release.major}&arch=$basearch"
-    failovermethod: 'priority'
     enabled: false
     gpgkey: "file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-%{facts.os.release.major}"
     gpgcheck: true
@@ -48,7 +43,6 @@ yum::repos:
   epel-testing-source:
     descr: "Extra Packages for Enterprise Linux %{facts.os.release.major} - Testing - $basearch - Source"
     mirrorlist: "https://mirrors.fedoraproject.org/metalink?repo=testing-source-epel%{facts.os.release.major}&arch=$basearch"
-    failovermethod: 'priority'
     enabled: false
     gpgkey: "file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-%{facts.os.release.major}"
     gpgcheck: true
